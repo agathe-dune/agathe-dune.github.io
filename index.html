@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agathe Dune · Artiste multimédia</title>
+  <meta name="description" content="Portfolio d'Agathe Dune : modélisation 3D Blockbench, concept art, dessin et photo. Recherche une alternance de 3 ans en artiste multimédia dès janvier 2027.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agathe Dune · Artiste multimédia">
+  <meta property="og:description" content="3D, concept art, dessin, photo. Recherche d'alternance dès janvier 2027.">
+  <meta property="og:url" content="https://agathe-dune.github.io/">
+  <meta property="og:image" content="https://agathe-dune.github.io/og-image.jpg">
+  <link rel="canonical" href="https://agathe-dune.github.io/">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/familjen-grotesk-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- ===== SECTION : EN-TÊTE ===== -->
+<header class="site-header">
+  <a class="logo" href="#top">Agathe Dune</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav aria-label="Navigation principale">
+    <ul id="menu">
+      <li><a href="#3d">3D</a></li>
+      <li><a href="#concept">Concept art</a></li>
+      <li><a href="#dessin">Dessin</a></li>
+      <li><a href="#photo">Photo</a></li>
+      <li><a href="#alternance" class="nav-accent">Alternance</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ===== SECTION : ACCUEIL ===== -->
+<section class="hero" id="top">
+  <figure class="float float--right" data-parallax="-0.10">
+    <img src="img/lineart/croquis-figures.webp" width="823" height="790" alt="Croquis au crayon de passagers en train de lire" fetchpriority="high">
+  </figure>
+  <figure class="float float--lanternes" data-parallax="-0.14">
+    <img src="img/lineart/lanternes.webp" width="364" height="565" alt="Lineart de lanternes suspendues à des volutes">
+  </figure>
+  <figure class="float float--left" data-parallax="0.06">
+    <img src="img/lineart/croquis-plantes.webp" width="1100" height="750" alt="Croquis au trait d'un jardin de plantes en pots">
+  </figure>
+  <figure class="float float--top pose" data-parallax="-0.04">
+    <img class="pose__line" src="img/lineart/pose-lineart.webp" width="1020" height="1100" alt="Lineart de deux amies assises dos à dos, l'une dans un sweat à oreilles de lapin">
+    <img class="pose__sketch" src="img/lineart/pose-sketch.webp" width="1020" height="1100" alt="" decoding="async">
+  </figure>
+
+  <div class="hero__center">
+    <h1 class="name"><span class="name__line"><span>Agathe</span></span><span class="name__line"><span>Dune</span></span></h1>
+    <p class="hero__pitch">Recherche d'alternance · artiste multimédia · 3 ans · dès janvier 2027</p>
+    <p class="hero__links">
+      <a class="link" href="cv.pdf">Voir le CV</a>
+      <a class="link" href="#contact">Me contacter</a>
+    </p>
+  </div>
+</section>
+
+<a class="counter" href="#3d"><span data-count>0</span> projets à découvrir <span class="counter__arrow" aria-hidden="true">↓</span></a>
+
+<!-- ===== SECTION : 3D ===== -->
+<section class="section" id="3d" aria-labelledby="t-3d">
+  <header class="section__head" data-reveal>
+    <h2 id="t-3d" class="section__title">Modélisation 3D</h2>
+    <p class="section__intro">Modèles créés dans Blockbench pour des serveurs Minecraft role-play et des commandes clientes. Chaque création est optimisée avec soin et me prend entre 2 et 4 heures, texturage inclus.</p>
+  </header>
+
+  <div class="feature" data-project="velo" data-reveal>
+    <div class="feature__stage">
+      <model-viewer src="models/electric-bike.glb" poster="img/3d/large/3d-22-velo-electrique.webp" alt="Vélo électrique en voxels, modèle 3D interactif" camera-orbit="35deg 75deg auto" camera-controls auto-rotate autoplay interaction-prompt="none" shadow-intensity="0.6" shadow-softness="1"></model-viewer>
+      <p class="feature__hint" aria-hidden="true">Glissez pour tourner · pincez pour zoomer</p>
+    </div>
+    <div class="feature__text">
+      <h3 class="feature__title">Vélo électrique</h3>
+      <p>Exporté de Blockbench, textures en pixel art conservées nettes.</p>
+    </div>
+  </div>
+
+  <div class="cards">
+    <article class="card" data-project="pingouin" data-reveal>
+      <a class="card__link" href="#projet-pingouin" data-sheet="pingouin">
+        <span class="card__media"><img src="img/3d/thumb/3d-12-pingouin.webp" width="307" height="423" loading="lazy" alt="Pingouin en voxels"></span>
+        <h3 class="card__title">Pingouin</h3>
+        <span class="card__meta">Commande cliente · mars 2026</span>
+      </a>
+      <template id="sheet-pingouin">
+        <header class="sheet__head">
+          <h2 class="sheet__title" id="sheet-title">Pingouin</h2>
+          <p class="sheet__lead">Un des deux oiseaux réalisés pour une cliente, avec le perroquet. Modèle léger, pensé pour un serveur Minecraft.</p>
+          <dl class="sheet__meta">
+            <div><dt>Date</dt><dd>Mars 2026</dd></div>
+            <div><dt>Texture</dt><dd>128 × 128 px</dd></div>
+            <div><dt>Outil</dt><dd>Blockbench</dd></div>
+          </dl>
+        </header>
+        <ol class="process" data-gallery>
+          <li><a href="img/3d/large/3d-15-pingouin-wireframe-1.webp" data-zoom data-caption="Pingouin · maillage, vue de trois quarts"><img src="img/3d/large/3d-15-pingouin-wireframe-1.webp" width="320" height="455" loading="lazy" alt="Maillage filaire du pingouin, vue de trois quarts"></a><p>Maillage, trois quarts</p></li>
+          <li><a href="img/3d/large/3d-16-pingouin-wireframe-2.webp" data-zoom data-caption="Pingouin · maillage, vue de face"><img src="img/3d/large/3d-16-pingouin-wireframe-2.webp" width="309" height="425" loading="lazy" alt="Maillage filaire du pingouin, vue de face"></a><p>Maillage, face</p></li>
+          <li><a href="img/3d/large/3d-12-pingouin.webp" data-zoom data-caption="Pingouin · texture et rendu final"><img src="img/3d/large/3d-12-pingouin.webp" width="307" height="423" loading="lazy" alt="Pingouin texturé en voxels, vue de face"></a><p>Texture et rendu</p></li>
+        </ol>
+      </template>
+    </article>
+    <article class="card" data-project="perroquet" data-reveal>
+      <a class="card__link" href="#projet-perroquet" data-sheet="perroquet">
+        <span class="card__media"><img src="img/3d/thumb/3d-10-perroquet.webp" width="344" height="375" loading="lazy" alt="Perroquet ara en voxels"></span>
+        <h3 class="card__title">Perroquet</h3>
+        <span class="card__meta">Commande cliente · mars 2026</span>
+      </a>
+      <template id="sheet-perroquet">
+        <header class="sheet__head">
+          <h2 class="sheet__title" id="sheet-title">Perroquet</h2>
+          <p class="sheet__lead">Le second oiseau de la commande : un ara rouge, bleu et jaune, ailes déployées.</p>
+          <dl class="sheet__meta">
+            <div><dt>Date</dt><dd>Mars 2026</dd></div>
+            <div><dt>Texture</dt><dd>128 × 128 px</dd></div>
+            <div><dt>Outil</dt><dd>Blockbench</dd></div>
+          </dl>
+        </header>
+        <ol class="process" data-gallery>
+          <li><a href="img/3d/large/3d-13-perroquet-wireframe-1.webp" data-zoom data-caption="Perroquet · maillage, vue de trois quarts"><img src="img/3d/large/3d-13-perroquet-wireframe-1.webp" width="217" height="249" loading="lazy" alt="Maillage filaire du perroquet, vue de trois quarts"></a><p>Maillage, trois quarts</p></li>
+          <li><a href="img/3d/large/3d-14-perroquet-wireframe-2.webp" data-zoom data-caption="Perroquet · maillage, vue de profil"><img src="img/3d/large/3d-14-perroquet-wireframe-2.webp" width="258" height="213" loading="lazy" alt="Maillage filaire du perroquet, vue de profil"></a><p>Maillage, profil</p></li>
+          <li><a href="img/3d/large/3d-10-perroquet.webp" data-zoom data-caption="Perroquet · rendu, vue de trois quarts"><img src="img/3d/large/3d-10-perroquet.webp" width="344" height="375" loading="lazy" alt="Perroquet ara texturé, vue de trois quarts"></a><p>Rendu, trois quarts</p></li>
+          <li><a href="img/3d/large/3d-11-perroquet-profil.webp" data-zoom data-caption="Perroquet · rendu, vue de profil"><img src="img/3d/large/3d-11-perroquet-profil.webp" width="338" height="414" loading="lazy" alt="Perroquet ara texturé, vue de profil"></a><p>Rendu, profil</p></li>
+        </ol>
+      </template>
+    </article>
+    <article class="card" data-project="jukebox" data-reveal>
+      <a class="card__link" href="#projet-jukebox" data-sheet="jukebox">
+        <span class="card__media card__media--dark"><img src="img/3d/thumb/3d-01-jukebox-face.webp" width="580" height="705" loading="lazy" alt="Jukebox en voxels"></span>
+        <h3 class="card__title">Jukebox</h3>
+        <span class="card__meta">Serveur role-play LBDS · novembre 2025</span>
+      </a>
+      <template id="sheet-jukebox">
+        <header class="sheet__head">
+          <h2 class="sheet__title" id="sheet-title">Jukebox</h2>
+          <p class="sheet__lead">Un jukebox rétro pour le serveur role-play LBDS, avec une façade lumineuse en dégradé arc-en-ciel.</p>
+          <dl class="sheet__meta">
+            <div><dt>Date</dt><dd>6 novembre 2025</dd></div>
+            <div><dt>Texture</dt><dd>256 × 256 px</dd></div>
+            <div><dt>Outil</dt><dd>Blockbench</dd></div>
+          </dl>
+        </header>
+        <ol class="process" data-gallery>
+          <li><a href="img/3d/large/3d-04-jukebox-wireframe-1.webp" data-zoom data-caption="Jukebox · maillage, vue de trois quarts"><img src="img/3d/large/3d-04-jukebox-wireframe-1.webp" width="280" height="348" loading="lazy" alt="Maillage filaire du jukebox, vue de trois quarts"></a><p>Maillage, trois quarts</p></li>
+          <li><a href="img/3d/large/3d-05-jukebox-wireframe-2.webp" data-zoom data-caption="Jukebox · maillage, vue de face"><img src="img/3d/large/3d-05-jukebox-wireframe-2.webp" width="258" height="350" loading="lazy" alt="Maillage filaire du jukebox, vue de face"></a><p>Maillage, face</p></li>
+          <li class="is-dark"><a href="img/3d/large/3d-01-jukebox-face.webp" data-zoom data-caption="Jukebox · rendu, vue de face"><img src="img/3d/large/3d-01-jukebox-face.webp" width="580" height="705" loading="lazy" alt="Jukebox texturé, vue de face"></a><p>Rendu, face</p></li>
+          <li class="is-dark"><a href="img/3d/large/3d-02-jukebox-trois-quarts.webp" data-zoom data-caption="Jukebox · rendu, vue de trois quarts"><img src="img/3d/large/3d-02-jukebox-trois-quarts.webp" width="580" height="731" loading="lazy" alt="Jukebox texturé, vue de trois quarts"></a><p>Rendu, trois quarts</p></li>
+          <li class="is-dark"><a href="img/3d/large/3d-03-jukebox-profil.webp" data-zoom data-caption="Jukebox · rendu, vue de profil"><img src="img/3d/large/3d-03-jukebox-profil.webp" width="580" height="763" loading="lazy" alt="Jukebox texturé, vue de profil"></a><p>Rendu, profil</p></li>
+        </ol>
+      </template>
+    </article>
+    <article class="card" data-project="coupe" data-reveal>
+      <a class="card__link" href="#projet-coupe" data-sheet="coupe">
+        <span class="card__media"><img src="img/3d/thumb/3d-06-coupe-quidditch.webp" width="365" height="610" loading="lazy" alt="Coupe de Quidditch dorée en voxels"></span>
+        <h3 class="card__title">Coupe de Quidditch</h3>
+        <span class="card__meta">Serveur role-play LBDS · décembre 2025</span>
+      </a>
+      <template id="sheet-coupe">
+        <header class="sheet__head">
+          <h2 class="sheet__title" id="sheet-title">Coupe de Quidditch</h2>
+          <p class="sheet__lead">Un trophée doré aux ailes déployées, réalisé pour le serveur role-play LBDS.</p>
+          <dl class="sheet__meta">
+            <div><dt>Date</dt><dd>15 décembre 2025</dd></div>
+            <div><dt>Texture</dt><dd>128 × 128 px</dd></div>
+            <div><dt>Outil</dt><dd>Blockbench</dd></div>
+          </dl>
+        </header>
+        <ol class="process" data-gallery>
+          <li><a href="img/3d/large/3d-08-coupe-quidditch-wireframe-1.webp" data-zoom data-caption="Coupe de Quidditch · maillage, vue de face"><img src="img/3d/large/3d-08-coupe-quidditch-wireframe-1.webp" width="268" height="360" loading="lazy" alt="Maillage filaire de la coupe, vue de face"></a><p>Maillage, face</p></li>
+          <li><a href="img/3d/large/3d-09-coupe-quidditch-wireframe-2.webp" data-zoom data-caption="Coupe de Quidditch · maillage, ailes déployées"><img src="img/3d/large/3d-09-coupe-quidditch-wireframe-2.webp" width="443" height="626" loading="lazy" alt="Maillage filaire de la coupe, ailes déployées"></a><p>Maillage, détail des ailes</p></li>
+          <li><a href="img/3d/large/3d-06-coupe-quidditch.webp" data-zoom data-caption="Coupe de Quidditch · rendu final"><img src="img/3d/large/3d-06-coupe-quidditch.webp" width="365" height="610" loading="lazy" alt="Coupe dorée texturée"></a><p>Rendu</p></li>
+          <li><a href="img/3d/large/3d-07-coupe-quidditch-2.webp" data-zoom data-caption="Coupe de Quidditch · rendu, seconde vue"><img src="img/3d/large/3d-07-coupe-quidditch-2.webp" width="247" height="350" loading="lazy" alt="Coupe dorée texturée, seconde vue"></a><p>Rendu, seconde vue</p></li>
+        </ol>
+      </template>
+    </article>
+    <article class="card card--wide" data-project="unity" data-reveal>
+      <a class="card__link" href="#projet-unity" data-sheet="unity">
+        <span class="card__media card__media--cover"><img src="img/3d/thumb/3d-18-unity-map-village.webp" width="698" height="432" loading="lazy" alt="Village western au pied d'un canyon, modélisé dans Unity"></span>
+        <h3 class="card__title">Unity Map</h3>
+        <span class="card__meta">Level design chez TUMO · septembre 2025</span>
+      </a>
+      <template id="sheet-unity">
+        <header class="sheet__head">
+          <h2 class="sheet__title" id="sheet-title">Unity Map</h2>
+          <p class="sheet__lead">Chez TUMO, j'ai travaillé le level design sous la supervision d'un expert. J'ai créé mon propre univers (modélisation 3D, textures) puis optimisé l'environnement en jouant avec les shaders, l'éclairage et les angles de caméra pour créer une ambiance immersive.</p>
+          <dl class="sheet__meta">
+            <div><dt>Date</dt><dd>29 septembre 2025</dd></div>
+            <div><dt>Durée</dt><dd>6 heures</dd></div>
+            <div><dt>Outil</dt><dd>Unity</dd></div>
+          </dl>
+        </header>
+        <ol class="process process--wide" data-gallery>
+          <li><a href="img/3d/large/3d-17-unity-map-saloon.webp" data-zoom data-caption="Unity Map · intérieur du saloon"><img src="img/3d/large/3d-17-unity-map-saloon.webp" width="800" height="459" loading="lazy" alt="Intérieur de saloon western"></a><p>Le saloon</p></li>
+          <li><a href="img/3d/large/3d-18-unity-map-village.webp" data-zoom data-caption="Unity Map · rue du village"><img src="img/3d/large/3d-18-unity-map-village.webp" width="698" height="432" loading="lazy" alt="Rue de village western au pied d'un canyon"></a><p>La rue du village</p></li>
+          <li><a href="img/3d/large/3d-19-unity-map-train.webp" data-zoom data-caption="Unity Map · train à vapeur"><img src="img/3d/large/3d-19-unity-map-train.webp" width="912" height="450" loading="lazy" alt="Train à vapeur dans un désert de canyons"></a><p>Le train</p></li>
+          <li><a href="img/3d/large/3d-20-unity-map-canyon.webp" data-zoom data-caption="Unity Map · vue d'ensemble"><img src="img/3d/large/3d-20-unity-map-canyon.webp" width="739" height="372" loading="lazy" alt="Vue aérienne d'un plateau désertique"></a><p>Vue d'ensemble</p></li>
+          <li><a href="img/3d/large/3d-21-unity-map-coucher-soleil.webp" data-zoom data-caption="Unity Map · lumière du soir"><img src="img/3d/large/3d-21-unity-map-coucher-soleil.webp" width="724" height="378" loading="lazy" alt="Canyons sous un ciel orangé"></a><p>Lumière du soir</p></li>
+        </ol>
+      </template>
+    </article>
+  </div>
+</section>
+
+<!-- ===== SECTION : CONCEPT ART ===== -->
+<section class="section" id="concept" aria-labelledby="t-concept">
+  <header class="section__head" data-reveal>
+    <h2 id="t-concept" class="section__title">Concept art</h2>
+    <p class="section__intro">Genesys, mon plus grand projet : un point-and-click dystopique inspiré du Meilleur des mondes et de Metro 2033, dont j'assure la direction artistique.</p>
+  </header>
+
+  <ol class="case" data-gallery>
+    <li class="case__step" data-project="genesys" data-reveal>
+      <a class="case__media" href="img/concept/large/concept-01-genesys-planche-1.webp" data-zoom data-caption="Genesys · planche n°1, recherche d'ambiance">
+        <img src="img/concept/large/concept-01-genesys-planche-1.webp" width="1440" height="1018" loading="lazy" alt="Planche Genesys à l'aquarelle : personnages, décors et mots-clés du jeu">
+        <span class="zoom-hint" aria-hidden="true">Agrandir</span>
+      </a>
+      <div class="case__text">
+        <h3>Ambiance</h3>
+        <p>Des ébauches réalisées en temps limité : une première exploration de l'ambiance visuelle et des concepts du jeu, dans une démarche proche du storyboard.</p>
+      </div>
+    </li>
+    <li class="case__step" data-reveal>
+      <a class="case__media" href="img/concept/large/concept-02-genesys-personnages.webp" data-zoom data-caption="Genesys · personnages">
+        <img src="img/concept/large/concept-02-genesys-personnages.webp" width="1008" height="713" loading="lazy" alt="Planche de personnages Genesys : jeune femme, chirurgien-araignée, chasseur">
+        <span class="zoom-hint" aria-hidden="true">Agrandir</span>
+      </a>
+      <div class="case__text">
+        <h3>Personnages</h3>
+        <p>Pour enrichir l'univers, j'ai développé le contexte, les motivations et les aspirations de chaque personnage, avec des objectifs clairs et un design reconnaissable au premier regard.</p>
+      </div>
+    </li>
+    <li class="case__step" data-reveal>
+      <a class="case__media" href="img/concept/large/concept-03-genesys-paysages.webp" data-zoom data-caption="Genesys · décors et habitations">
+        <img src="img/concept/large/concept-03-genesys-paysages.webp" width="1008" height="713" loading="lazy" alt="Planche de décors Genesys : métro, ruelles et hôpital">
+        <span class="zoom-hint" aria-hidden="true">Agrandir</span>
+      </a>
+      <div class="case__text">
+        <h3>Décors</h3>
+        <p>Après les personnages, leurs habitations. Chaque espace a une ambiance propre, liée au caractère de son occupant : le décor raconte lui aussi l'histoire.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ===== SECTION : DESSIN ===== -->
+<section class="section" id="dessin" aria-labelledby="t-dessin">
+  <header class="section__head" data-reveal>
+    <h2 id="t-dessin" class="section__title">Dessin</h2>
+    <p class="section__intro">Dès mon plus jeune âge, j'ai été entourée par l'art sous toutes ses formes. Chaque œuvre est une nouvelle aventure qui me permet de repousser mes limites.</p>
+  </header>
+
+  <div class="wall" data-gallery>
+    <figure class="piece" data-project="croquis" data-reveal>
+      <a href="img/dessin/large/dessin-01-croquis-modele-vivant.webp" data-zoom data-caption="Croquis modèle vivant · encre de Chine, poses de 3 minutes, A3, 2025"><img src="img/dessin/large/dessin-01-croquis-modele-vivant.webp" width="467" height="726" loading="lazy" alt="Croquis rapides de corps en mouvement à l'encre noire"></a>
+      <figcaption><strong>Croquis modèle vivant</strong> Encre de Chine, poses de 3 min · A3 · 2025</figcaption>
+    </figure>
+    <figure class="piece" data-project="livres" data-reveal>
+      <a href="img/dessin/large/dessin-03-livres-gouache.webp" data-zoom data-caption="Livres · gouache sur Canson grand format, 2026"><img src="img/dessin/large/dessin-03-livres-gouache.webp" width="618" height="412" loading="lazy" alt="Pile de livres anciens peinte à la gouache"></a>
+      <figcaption><strong>Livres</strong> Gouache sur Canson grand format · 2026</figcaption>
+    </figure>
+    <figure class="piece" data-project="vinyle" data-reveal>
+      <a href="img/dessin/large/dessin-05-vinyle-recto.webp" data-zoom data-caption="Vinyle, recto · pochette pour La symphonie des éclairs de Zaho de Sagazan, Photoshop, 2024"><img src="img/dessin/large/dessin-05-vinyle-recto.webp" width="598" height="604" loading="lazy" alt="Pochette de vinyle : fusée autour d'une planète rouge dans l'espace"></a>
+      <figcaption><strong>Vinyle, recto</strong> Recréer la pochette d'une artiste en gardant son énergie · Photoshop · 2024</figcaption>
+    </figure>
+    <figure class="piece" data-project="insectes" data-reveal>
+      <a href="img/dessin/large/dessin-02-alphabet-insectes.webp" data-zoom data-caption="Alphabet insectes · stylo BIC bleu sur carte à gratter, 2025"><img src="img/dessin/large/dessin-02-alphabet-insectes.webp" width="454" height="605" loading="lazy" alt="Quatre lettres ornées formées d'insectes, au stylo"></a>
+      <figcaption><strong>Alphabet insectes</strong> Stylo BIC bleu, carte à gratter coupée en 4 · 2025</figcaption>
+    </figure>
+    <figure class="piece" data-project="labyrinthe" data-reveal>
+      <a href="img/dessin/large/dessin-04-labyrinthe.webp" data-zoom data-caption="Labyrinthe · crayon à papier sur Canson grainé A4, 2024"><img src="img/dessin/large/dessin-04-labyrinthe.webp" width="605" height="454" loading="lazy" alt="Mot labyrinthe en lettres géométriques au crayon"></a>
+      <figcaption><strong>Labyrinthe</strong> Crayon à papier sur Canson grainé · A4 · 2024</figcaption>
+    </figure>
+    <figure class="piece" data-reveal>
+      <a href="img/dessin/large/dessin-06-vinyle-verso.webp" data-zoom data-caption="Vinyle, verso · liste des titres, Photoshop, 2024"><img src="img/dessin/large/dessin-06-vinyle-verso.webp" width="590" height="596" loading="lazy" alt="Verso de pochette : visage turquoise et liste des titres"></a>
+      <figcaption><strong>Vinyle, verso</strong> Illustration et liste des titres · Photoshop · 2024</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== SECTION : PHOTO ===== -->
+<section class="section" id="photo" aria-labelledby="t-photo">
+  <header class="section__head" data-reveal>
+    <h2 id="t-photo" class="section__title">Photo</h2>
+    <p class="section__intro">En voyage, je photographie l'architecture urbaine. J'aime l'urbanisme des villes modernes et les esthétiques inspirées du futurisme et de l'Art déco, pour leurs couleurs et leur géométrie.</p>
+  </header>
+
+  <div class="series" data-gallery data-project="architecture">
+    <figure class="shot shot--a" data-reveal><a href="img/photo/large/photo-01-tunnel-combi.webp" data-zoom data-caption="Tunnel"><img src="img/photo/large/photo-01-tunnel-combi.webp" width="480" height="640" loading="lazy" alt="Combi Volkswagen au bout d'un tunnel d'anneaux lumineux"></a><figcaption>Tunnel</figcaption></figure>
+    <figure class="shot shot--b" data-reveal><a href="img/photo/large/photo-03-pride-is-a-protest.webp" data-zoom data-caption="Pride is a protest"><img src="img/photo/large/photo-03-pride-is-a-protest.webp" width="512" height="384" loading="lazy" alt="Fresque colorée Pride is a protest sur une façade en brique"></a><figcaption>Pride is a protest</figcaption></figure>
+    <figure class="shot shot--c" data-reveal><a href="img/photo/large/photo-02-facade-noir-blanc.webp" data-zoom data-caption="Façade en escalier"><img src="img/photo/large/photo-02-facade-noir-blanc.webp" width="384" height="512" loading="lazy" alt="Façade d'immeuble en escalier, noir et blanc"></a><figcaption>Façade en escalier</figcaption></figure>
+    <figure class="shot shot--d" data-reveal><a href="img/photo/large/photo-05-immeuble-art-deco.webp" data-zoom data-caption="Art déco"><img src="img/photo/large/photo-05-immeuble-art-deco.webp" width="720" height="540" loading="lazy" alt="Façade d'immeuble aux bandeaux horizontaux"></a><figcaption>Art déco</figcaption></figure>
+    <figure class="shot shot--e" data-reveal><a href="img/photo/large/photo-04-berlin-nuit.webp" data-zoom data-caption="Berlin, la nuit"><img src="img/photo/large/photo-04-berlin-nuit.webp" width="481" height="576" loading="lazy" alt="Tour de télévision de Berlin la nuit, au bout d'une rue"></a><figcaption>Berlin, la nuit</figcaption></figure>
+    <figure class="shot shot--f" data-reveal><a href="img/photo/large/photo-06-tour-futuriste.webp" data-zoom data-caption="Tour futuriste"><img src="img/photo/large/photo-06-tour-futuriste.webp" width="441" height="512" loading="lazy" alt="Tour d'acier aux modules cylindriques sous un ciel gris"></a><figcaption>Tour futuriste</figcaption></figure>
+  </div>
+</section>
+
+<!-- ===== SECTION : ALTERNANCE ===== -->
+<section class="section" id="alternance" aria-labelledby="t-alt">
+  <header class="section__head" data-reveal>
+    <h2 id="t-alt" class="section__title">Alternance</h2>
+    <p class="section__intro">Je recherche une alternance de 3 ans en artiste multimédia, ou sur des métiers proches de l'art du jeu vidéo.</p>
+  </header>
+
+  <ul class="facts">
+    <li data-reveal><span class="facts__value">3 ans</span><span class="facts__label">de contrat</span></li>
+    <li data-reveal><span class="facts__value">4 j + 1 j</span><span class="facts__label">en entreprise, puis en formation le vendredi</span></li>
+    <li data-reveal><span class="facts__value">Janvier 2027</span><span class="facts__label">date de début</span></li>
+    <li data-reveal><span class="facts__value">France</span><span class="facts__label">mobile partout</span></li>
+  </ul>
+
+  <div class="alt" data-reveal>
+    <div class="alt__block">
+      <h3>Formation</h3>
+      <p>1re année de licence professionnelle Métiers du jeu vidéo, parcours arts numériques, au CNAM-Enjmin à Angoulême.</p>
+    </div>
+    <div class="alt__block">
+      <h3>Ce que je peux faire pour vous</h3>
+      <p>Modélisation et animation 3D, concept art, illustration, assets pour le jeu vidéo, level design sous Unity, graphisme et retouche photo.</p>
+    </div>
+    <a class="button" href="cv.pdf" download>Télécharger mon CV <span class="arrow" aria-hidden="true">↓</span></a>
+  </div>
+
+  <div class="key" data-reveal>
+    <p class="key__figure" aria-hidden="true">3<span>×</span></p>
+    <p class="key__claim"><strong>Environ trois fois moins cher qu'un junior au SMIC</strong> la première année, pour un temps plein dans votre équipe, 4 jours sur 5.</p>
+  </div>
+
+  <details class="costs" data-reveal>
+    <summary><span>Voir le détail des coûts</span> <span class="costs__icon" aria-hidden="true"></span></summary>
+    <div class="costs__body">
+      <div class="salary">
+        <h3>Salaire brut mensuel, 1re année</h3>
+        <div class="salary__row">
+          <span class="salary__who">Moi, en apprentissage</span>
+          <span class="salary__bar" style="--w: 43%"><span>≈ 803 €</span></span>
+        </div>
+        <div class="salary__row is-muted">
+          <span class="salary__who">Un junior au SMIC</span>
+          <span class="salary__bar" style="--w: 100%"><span>1 867 €</span></span>
+        </div>
+      </div>
+
+      <ul class="perks">
+        <li><strong>Exonérées</strong><span>Cotisations salariales : le brut est quasi le net. Classiques pour un junior.</span></li>
+        <li><strong>Quasi nulles</strong><span>Charges patronales, grâce à la réduction générale. Pleines au-delà du SMIC pour un junior.</span></li>
+        <li><strong>2 000 €</strong><span>D'aide à l'embauche la 1re année sous 250 salariés, 750 € au-delà. Aucune pour un junior.</span></li>
+        <li><strong>0 €</strong><span>De prime de fin de contrat, contre 10 % du brut total pour un CDD.</span></li>
+        <li><strong>Hors effectif</strong><span>Je ne compte pas dans le calcul des seuils de l'entreprise.</span></li>
+      </ul>
+
+      <p class="note">Le salaire minimum d'un apprenti augmente en 2e et 3e année ; le rapport de coût indiqué vaut pour la 1re année.</p>
+      <p class="note">Chiffres indicatifs 2026, à confirmer avec l'OPCO de l'entreprise. Source : <a href="https://www.economie.gouv.fr/entreprises/aides-embauche-apprenti" rel="noopener">economie.gouv.fr</a> (aide pour un diplôme de niveau 6, contrats conclus du 8 mars au 31 décembre 2026).</p>
+    </div>
+  </details>
+</section>
+
+</main>
+
+<!-- ===== SECTION : CONTACT ===== -->
+<footer class="contact" id="contact" aria-labelledby="t-contact">
+  <h2 id="t-contact" class="contact__title" data-reveal>Travaillons ensemble</h2>
+  <div class="contact__grid" data-reveal>
+    <div>
+      <p class="contact__label">Agathe Dune</p>
+      <p>Artiste multimédia 2D et 3D</p>
+      <p>Mobile partout en France</p>
+    </div>
+    <div>
+      <p><a class="link" href="mailto:agathedunep@gmail.com">agathedunep@gmail.com</a></p>
+      <p><a class="link" href="cv.pdf">CV (PDF)</a></p>
+    </div>
+    <div>
+      <p><a class="link" href="https://fr.linkedin.com/in/agathe-dune-pion-759427299" rel="noopener" target="_blank">LinkedIn</a></p>
+      <p><a class="link" href="https://www.instagram.com/agathedunep/" rel="noopener" target="_blank">Instagram</a></p>
+    </div>
+  </div>
+  <p class="contact__legal">© 2026 Agathe Dune · Ce site n'utilise aucun cookie ni outil de suivi.</p>
+  <figure class="garden" aria-hidden="true">
+    <img src="img/lineart/fleurs-creme.webp" width="1269" height="845" alt="" loading="lazy">
+  </figure>
+  <p class="initials" aria-hidden="true" data-reveal>A.D</p>
+</footer>
+
+<!-- ===== FICHE PROJET ===== -->
+<dialog class="sheet" aria-labelledby="sheet-title">
+  <div class="sheet__bar">
+    <button class="sheet__back" type="button"><span class="arrow" aria-hidden="true">←</span> <span class="sheet__back-label">Tous les projets</span></button>
+    <button class="sheet__close" type="button">Fermer <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="sheet__body"></div>
+  <div class="sheet__next"></div>
+</dialog>
+
+<!-- ===== LIGHTBOX ===== -->
+<dialog class="lightbox" aria-label="Image agrandie">
+  <button class="lb-close" type="button">Fermer <span aria-hidden="true">×</span></button>
+  <button class="lb-prev" type="button" aria-label="Image précédente">←</button>
+  <figure>
+    <img alt="">
+    <figcaption><span class="lb-caption"></span> <span class="lb-count"></span></figcaption>
+  </figure>
+  <button class="lb-next" type="button" aria-label="Image suivante">→</button>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
