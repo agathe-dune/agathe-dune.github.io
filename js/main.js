@@ -96,7 +96,6 @@ let ticking = false;
 function onScroll() {
   const y = scrollY;
   header.classList.toggle("is-scrolled", y > 10);
-  header.classList.toggle("is-past-hero", y > innerHeight * 0.35);
   header.classList.toggle("is-hidden", y > lastY && y > 400 && !header.contains(document.activeElement));
   lastY = y;
   progress.style.setProperty("--p", y / Math.max(1, document.documentElement.scrollHeight - innerHeight));

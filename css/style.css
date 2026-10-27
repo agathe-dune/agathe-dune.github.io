@@ -17,7 +17,6 @@
   --fs-section: clamp(52px, 8.5vw, 136px);
   --gutter: 20px;
   --header-h: 64px;
-  --lantern-w: 27vw;
   --ease: cubic-bezier(.2, .7, .2, 1);
 }
 
@@ -25,8 +24,8 @@
 @font-face { font-family: "Familjen Grotesk"; src: url("../fonts/familjen-grotesk-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Familjen Grotesk"; src: url("../fonts/familjen-grotesk-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
 
-@media (min-width: 768px) { :root { --gutter: 40px; --fs-body: 18px; --lantern-w: 16vw; } }
-@media (min-width: 1200px) { :root { --gutter: 56px; --lantern-w: min(12vw, 230px); } }
+@media (min-width: 768px) { :root { --gutter: 40px; --fs-body: 18px; } }
+@media (min-width: 1200px) { :root { --gutter: 56px; } }
 
 /* ===== Base ===== */
 *, *::before, *::after { box-sizing: border-box; }
@@ -82,8 +81,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 500; line-height: 1.05; 
 .site-header.is-scrolled { border-color: var(--line); }
 .site-header.is-hidden { transform: translateY(-100%); }
 .site-header a { text-decoration: none; color: var(--ink); }
-.logo { font-size: 17px; font-weight: 600; white-space: nowrap; transition: opacity .5s var(--ease), translate .5s var(--ease); }
-.js .site-header:not(.is-past-hero) .logo { opacity: 0; translate: 0 -6px; pointer-events: none; }
+.logo { font-size: 17px; font-weight: 600; white-space: nowrap; }
 .site-header ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2px 18px; margin: 0; padding: 0; list-style: none; font-size: 15px; font-weight: 500; }
 .site-header nav a { position: relative; }
 .site-header nav a::after {
@@ -157,8 +155,6 @@ h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 500; line-height: 1.05; 
 .js .float img:not(.pose__sketch) { clip-path: inset(0 0 100% 0); animation: draw 2.2s var(--ease) .3s forwards; }
 .js .float--left img { animation-delay: .55s; }
 .js .float--top img { animation-delay: .8s; }
-.js .float--lanternes img { animation-delay: .45s; animation-duration: 1.8s; }
-.float--lanternes { top: 0; left: 0; z-index: 60; width: var(--lantern-w); }
 @keyframes draw { to { clip-path: inset(0 0 0 0); } }
 .float--right { top: calc(var(--header-h) + 4px); right: -4vw; width: 46vw; }
 .float--left { bottom: 2vw; left: -6vw; width: 58vw; }
@@ -213,7 +209,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 500; line-height: 1.05; 
 /* ===== 3D : modèle interactif ===== */
 .feature { display: grid; gap: 28px; align-items: end; margin-bottom: 72px; }
 @media (min-width: 1024px) { .feature { grid-template-columns: 1.7fr 1fr; gap: 56px; } }
-.feature__stage { position: relative; background: var(--tile); }
+.feature__stage { position: relative; background: var(--ink); }
 .feature__stage model-viewer {
   display: block;
   width: 100%;
@@ -222,7 +218,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 500; line-height: 1.05; 
   --poster-color: transparent;
 }
 model-viewer::part(default-progress-bar) { display: none; }
-.feature__hint { position: absolute; left: 20px; bottom: 16px; margin: 0; color: var(--muted); font-size: var(--fs-meta); pointer-events: none; }
+.feature__hint { position: absolute; left: 20px; bottom: 16px; margin: 0; color: #B9B8C4; font-size: var(--fs-meta); pointer-events: none; }
 .feature__title { margin-bottom: 12px; font-size: clamp(36px, 4vw, 64px); letter-spacing: -.02em; }
 .feature__text p { margin: 0 0 8px; }
 
@@ -287,6 +283,13 @@ model-viewer::part(default-progress-bar) { display: none; }
 .case__media:hover .zoom-hint, .case__media:focus-visible .zoom-hint { opacity: 1; transform: none; }
 .case__text h3 { margin-bottom: 16px; font-size: clamp(32px, 3.4vw, 52px); letter-spacing: -.02em; }
 .case__text p { margin: 0 0 12px; }
+.doodle--concept { width: min(28%, 120px); margin: 32px 0 0; }
+.doodle--concept img { width: 100%; height: auto; }
+.doodle--dessin { width: 55%; margin: 0 auto 40px; break-inside: avoid; }
+.doodle--dessin img { width: 100%; height: auto; }
+.doodle--photo { width: 34%; }
+.doodle--photo img { width: 100%; height: auto; }
+@media (min-width: 900px) { .doodle--photo { grid-column: 11 / 13; grid-row: 3; align-self: start; width: 100%; max-width: 200px; justify-self: end; } }
 
 /* ===== Dessin : galerie aux formats naturels ===== */
 .wall { columns: 2; column-gap: 16px; }
