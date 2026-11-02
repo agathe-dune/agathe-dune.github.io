@@ -156,20 +156,17 @@ h1, h2, h3 { margin: 0; color: var(--ink); font-weight: 500; line-height: 1.05; 
 .js .float--left img { animation-delay: .55s; }
 .js .float--top img { animation-delay: .8s; }
 @keyframes draw { to { clip-path: inset(0 0 0 0); } }
-.float--right { top: calc(var(--header-h) + 4px); right: -4vw; width: 46vw; }
 .float--left { bottom: 2vw; left: -6vw; width: 58vw; }
 .float--top { bottom: 2vw; right: 2vw; width: 38vw; }
 
 @media (min-width: 768px) {
   .name { font-size: clamp(64px, 19vw, 340px); }
   .hero { padding: calc(var(--header-h) + 26vw) var(--gutter) 24vw; }
-  .float--right { right: -2vw; width: 30vw; }
   .float--left { bottom: 2vh; left: -4vw; width: 42vw; }
   .float--top { bottom: 2vh; right: 2vw; width: 28vw; }
 }
 @media (min-width: 1200px) {
   .hero { padding: calc(var(--header-h) + 40px) var(--gutter) 80px; }
-  .float--right { top: calc(var(--header-h) + 4px); right: 1vw; width: 19vw; }
   .float--left { bottom: -2vh; left: -2vw; width: 27vw; }
   .float--top { bottom: 2vh; right: 2vw; width: 20vw; }
 }
